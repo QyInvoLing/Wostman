@@ -1,0 +1,27 @@
+{
+    "port":25565,
+    "needBase64":false,
+    "fields":[
+        {   "name":"login",
+            "inputSchema":{
+                "userid":{
+                    "__type":"number"
+                },
+                "password":{
+                    "__type":"string"
+                },
+                "extra_info":{
+                    "__type":"object"
+
+                }
+            },
+            "outputSchema":{
+                "result":{
+                    "__type":"enum",
+                    "__enum":["success","failure"]
+                }
+            }
+        }
+
+    ]
+}
